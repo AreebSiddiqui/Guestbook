@@ -13,7 +13,7 @@
   "devDependencies": {},
   "scripts": {
     "start":"node forGuestBook.js"
-    "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "author": "Muhammad Areeb Siddiqui",
   "license": "ISC"
