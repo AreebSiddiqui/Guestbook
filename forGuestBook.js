@@ -5,7 +5,7 @@ const logger = require("morgan");
 const path = require("path");
 const mongoose=require('mongoose');
 const bodyParser = require("body-parser");
-var port = process.env.PORT||3000;
+
 const app = express();
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -95,7 +95,4 @@ app.use((req,res)=>{
     res.status(404).render("404");
 });
 
-http.createServer(app).listen(port,()=>
-{
-console.log("App started at port 3000");
-});
+app.listen(process.env.PORT||3000);
