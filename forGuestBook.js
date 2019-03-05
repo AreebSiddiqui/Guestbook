@@ -84,7 +84,7 @@ app.post("/new-entry",(req,res,next)=>{
             .catch(err => { console.log(err) });
             entries.push({
                 title:req.body.title,
-                body:req.body.body,
+                //body:req.body.body,
                 published: new Date()
     
             })
