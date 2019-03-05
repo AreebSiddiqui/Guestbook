@@ -7,13 +7,13 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
+    "mongoose": "^5.4.17",
     "morgan": "^1.9.1",
     "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
-    "start":"node forGuestBook.js"
-    
+    "start": "node forGuestBook.js"
   },
   "author": "Muhammad Areeb Siddiqui",
   "license": "ISC"
