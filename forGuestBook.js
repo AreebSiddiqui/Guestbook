@@ -88,11 +88,16 @@ app.post("/new-entry",(req,res,next)=>{
                 published: new Date()
     
             })
-       res.end("its done");
+      res.redirect("/");
 });
 
 app.use((req,res)=>{
     res.status(404).render("404");
 });
 
-app.listen(process.env.PORT||5000)
+app.set( 'port', ( process.env.PORT || 5000 ));
+
+// Start node server
+app.listen( app.get( 'port' ), function() {
+  console.log( 'Node server is running on port ' + app.get( 'port' ));
+  });
