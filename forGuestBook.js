@@ -82,17 +82,17 @@ app.post("/new-entry",(req,res,next)=>{
             })
              
             .catch(err => { console.log(err) });
-            /*entries.push({
+            entries.push({
                 title:req.body.title,
                 body:req.body.body,
                 published: new Date()
     
-            })*/
-        res.redirect("/");
+            })
+       res.end("its done");
 });
 
 app.use((req,res)=>{
     res.status(404).render("404");
 });
 
-app.listen(process.env.PORT||3000)
+app.listen(process.env.PORT||5000)
