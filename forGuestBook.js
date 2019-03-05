@@ -82,12 +82,12 @@ app.post("/new-entry",(req,res,next)=>{
             })
              
             .catch(err => { console.log(err) });
-            entries.push({
+            /*entries.push({
                 title:req.body.title,
                 body:req.body.body,
                 published: new Date()
     
-            })
+            })*/
         res.redirect("/");
 });
 
